@@ -9,8 +9,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   menuH: {
     position: 'absolute',
-    top: '30px',
-    right: '30px'
+    top: '25px',
+    right: '25px'
   },
   iconB: {
     width: '100px',

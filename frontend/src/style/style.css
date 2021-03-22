@@ -7,4 +7,73 @@ body,
   box-sizing: border-box;
 }
 
+body {
+  background-color: #22b573;
+}
+
+.app p {
+  line-height: 200%;
+}
+.app h1 {
+  color: #f2f2f2;
+  margin: 30px;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.app .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.app .container .left-side div,
+.app .container .middle div {
+  width: 360px;
+  height: 520px;
+  padding: 25px 35px;
+}
+.app .container .left-side div h3,
+.app .container .middle div h3 {
+  width: 150px;
+  color: #fbba53;
+  letter-spacing: 2px;
+  line-height: 200%;
+}
+.app .container .left-side div {
+  color: #f2f2f2;
+  background-color: #1c1717;
+  margin: 40px 38px 0 35px;
+}
+.app .container .middle div {
+  color: #1c1717;
+  background-color: #f2f2f2;
+  margin: 40px 38px 0;
+}
+.app .container .right-side .text {
+  width: 360px;
+  height: 500px;
+  background-color: #1c1717;
+  margin: 40px 35px 0;
+  position: relative;
+}
+.app .container .right-side .text h3 {
+  color: #fbba53;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+}
+.app .container .right-side .text .icon-con {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .container .right-side .text .icon-con .icon {
+  color: #f2f2f2;
+  font-size: 150px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

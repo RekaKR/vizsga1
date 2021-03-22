@@ -1,2 +1,92 @@
 @use 'reset';
 @use 'variables' as *;
+
+body {
+  //min-width: 100vw;
+  //min-height: 100vh;
+  background-color: $bacgroundColor;
+}
+
+.app {
+  p {
+    line-height: 200%;
+  }
+  
+  h1 {
+    color: $lightDivBC;
+    margin: 30px;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+
+    .left-side,
+    .middle {
+      div {
+        width: 360px;
+        height: 520px;
+        padding: 25px 35px;
+
+        h3 {
+          width: 150px;
+          color: $headerC;
+          letter-spacing: 2px;
+          line-height: 200%;
+        }
+      }
+    }
+
+    .left-side {
+      div {
+        color: $lightDivBC;
+        background-color: $darkDivBC;
+        margin: 40px 38px 0 35px;
+      }
+    }
+    
+    .middle {
+      div {
+        color: $darkDivBC;
+        background-color: $lightDivBC;
+        margin: 40px 38px 0;
+      }
+    }
+
+    .right-side {
+      .text {
+        width: 360px;
+        height: 500px;
+        background-color: $darkDivBC;
+        margin: 40px 35px 0;
+        position: relative;
+
+        h3 {
+          color: $headerC;
+          letter-spacing: 2px;
+          position: absolute;
+          bottom: 35px;
+          left: 35px;
+        }
+
+        .icon-con {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .icon {
+            color: $lightDivBC;
+            font-size: 150px;
+            border: 2px solid $lightDivBC;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
