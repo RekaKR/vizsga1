@@ -2,22 +2,33 @@
 @use 'variables' as *;
 
 body {
-  //min-width: 100vw;
-  //min-height: 100vh;
   background-color: $bacgroundColor;
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+
+  h2,
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 200%;
+  }
 }
 
 .app {
-  p {
-    line-height: 200%;
-  }
-  
   h1 {
     color: $lightDivBC;
-    margin: 30px;
-    font-size: 50px;
+    margin: 35px;
+    font-size: 55px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
   }
 
   .container {
@@ -38,6 +49,11 @@ body {
           letter-spacing: 2px;
           line-height: 200%;
         }
+
+        h3:nth-child(2) {
+          letter-spacing: 0;
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -45,7 +61,7 @@ body {
       div {
         color: $lightDivBC;
         background-color: $darkDivBC;
-        margin: 40px 38px 0 35px;
+        margin: 35px 38px 0 35px;
       }
     }
     
@@ -53,16 +69,20 @@ body {
       div {
         color: $darkDivBC;
         background-color: $lightDivBC;
-        margin: 40px 38px 0;
+        margin: 35px 38px 0;
+
+        p::first-letter {
+          padding-left: 5px;
+        }
       }
     }
 
     .right-side {
       .text {
         width: 360px;
-        height: 500px;
+        height: 520px;
         background-color: $darkDivBC;
-        margin: 40px 35px 0;
+        margin: 35px 35px 0;
         position: relative;
 
         h3 {
@@ -81,9 +101,10 @@ body {
           
           .icon {
             color: $lightDivBC;
-            font-size: 150px;
+            font-size: 140px;
             border: 2px solid $lightDivBC;
             border-radius: 50%;
+            margin: 0 0 60px;
           }
         }
       }
