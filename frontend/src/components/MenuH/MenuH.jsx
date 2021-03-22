@@ -10,7 +10,10 @@ const useStyles = makeStyles({
   menuH: {
     position: 'absolute',
     top: '25px',
-    right: '25px'
+    right: '25px',
+    '@media (max-width: 360px)': {
+      right: '10px'
+    },
   },
   iconB: {
     width: '100px',
