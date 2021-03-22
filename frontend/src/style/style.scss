@@ -29,18 +29,46 @@ body {
     font-size: 55px;
     text-align: center;
     letter-spacing: 10px;
+
+    @media (min-width: 1001px) and (max-width: 1300px) {
+      font-size: 45px;
+    }
+
+    @media (min-width: 741px) and (max-width: 1000px) {
+      margin: 50px 60px 100px;
+      font-size: 35px;
+      text-align: left;
+      letter-spacing: 8px;
+    }
+    
+    @media (min-width: 521px) and (max-width: 740px) {
+      margin: 55px 60px 100px;
+      font-size: 25px;
+      text-align: left;
+      letter-spacing: 6px;
+    }
+
+    @media (max-width: 520px) {
+      margin: 45px 40px 100px;
+      font-size: 15px;
+      text-align: left;
+      letter-spacing: 4px;
+    }
+
   }
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 35px;
 
     .left-side,
     .middle {
-      div {
-        width: 360px;
-        height: 520px;
+      .text {
+        width: 100%;
+        max-width: 360px;
+        min-height: 520px;
         padding: 25px 35px;
 
         h3 {
@@ -58,18 +86,20 @@ body {
     }
 
     .left-side {
-      div {
+      margin: 35px 38px 0 35px;
+
+      .text {
         color: $lightDivBC;
         background-color: $darkDivBC;
-        margin: 35px 38px 0 35px;
       }
     }
     
     .middle {
-      div {
+      margin: 35px 38px 0;
+
+      .text {
         color: $darkDivBC;
         background-color: $lightDivBC;
-        margin: 35px 38px 0;
 
         p::first-letter {
           padding-left: 5px;
@@ -78,11 +108,12 @@ body {
     }
 
     .right-side {
+      margin: 35px 35px 0;
+
       .text {
         width: 360px;
         height: 520px;
         background-color: $darkDivBC;
-        margin: 35px 35px 0;
         position: relative;
 
         h3 {

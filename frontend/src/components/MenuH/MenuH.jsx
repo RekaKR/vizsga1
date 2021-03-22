@@ -24,30 +24,29 @@ const useStyles = makeStyles({
       backgroundColor: 'white',
       border: "2px solid black",
     },
-    '@media (max-width: 1100px)': {
+    '@media (max-width: 1300px)': {
       width: '90px',
       height: '90px',
-      border: "2px solid white",
     },
-    '@media (max-width: 750px)': {
+    '@media (max-width: 1000px)': {
       width: '80px',
       height: '80px',
     },
-    '@media (max-width: 430px)': {
-      width: '70px',
-      height: '70px',
+    '@media (max-width: 520px)': {
+      width: '55px',
+      height: '55px',
     }
   },
   icon: {
     fontSize: 65,
-    '@media (max-width: 1100px)': {
+    '@media (max-width: 1300px)': {
       fontSize: 55,
     },
-    '@media (max-width: 750px)': {
+    '@media (max-width: 1000px)': {
       fontSize: 45,
     },
-    '@media (max-width: 430px)': {
-      fontSize: 35,
+    '@media (max-width: 520px)': {
+      fontSize: 25,
     }
   }
 });
