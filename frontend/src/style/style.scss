@@ -110,8 +110,9 @@ body {
       margin: 35px 35px 0;
 
       .text {
-        width: 360px;
-        height: 520px;
+        width: 100%;
+        max-width: 360px;
+        min-height: 520px;
         background-color: $darkDivBC;
         position: relative;
 

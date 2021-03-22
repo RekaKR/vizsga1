@@ -62,10 +62,10 @@ body p {
   }
 }
 .app .container {
+  margin-top: 35px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 35px;
 }
 .app .container .left-side .text,
 .app .container .middle .text {
@@ -83,8 +83,8 @@ body p {
 }
 .app .container .left-side .text h3:nth-child(2),
 .app .container .middle .text h3:nth-child(2) {
-  letter-spacing: 0;
   margin-bottom: 20px;
+  letter-spacing: 0;
 }
 .app .container .left-side {
   margin: 35px 38px 0 35px;
@@ -107,8 +107,9 @@ body p {
   margin: 35px 35px 0;
 }
 .app .container .right-side .text {
-  width: 360px;
-  height: 520px;
+  width: 100%;
+  max-width: 360px;
+  min-height: 520px;
   background-color: #1c1717;
   position: relative;
 }
